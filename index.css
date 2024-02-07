@@ -1,5 +1,33 @@
+:root {
+    --black-fr: #000000;
+    --white-fr: #ffffff;
+    --not-quite-white-fr: #dfdede;
+    --quite-not-white-fr: #aaaaaa;
+}
+
 html {
     font-family: monospace;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--black-fr);
+    color: var(--white-fr);
+}
+
+a:link {
+    color: var(--white-fr);
+}
+
+a:visited {
+    color: var(--not-quite-white-fr);
+}
+
+a:hover {
+    color: var(--quite-not-white-fr);
+}
+
+a:active {
+    color: var(--white-fr);
+}
+
+::selection, ::-moz-selection {
+    color: var(--black-fr);
+    background: var(--white-fr);
 }
